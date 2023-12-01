@@ -36,4 +36,4 @@ if __name__ == "__main__":
         fp.write(content)
 
     n = len(content)
-    print(colored(f"Wrote {n} characters to \"{path}\"", COLOR))
+    print(colored(f"Wrote {n} characters to \"{path}\".", COLOR))
