@@ -8,13 +8,16 @@ from termcolor import colored
 PATH_TO_LOGS = Path("..", "logs")
 COLOR = "green"
 
+BOLD = "\033[1m"
+NO_BOLD = "\033[0m"
+
 
 if __name__ == "__main__":
 
     date = dt.now().strftime("%y-%m-%d")
     time = dt.now().strftime("%H:%M:%S")
     os.system('cls' if os.name == 'nt' else 'clear')
-    welcome = f"Date: {date}\nTime: {time}\n Log: "
+    welcome = BOLD + f"Date: {date}\nTime: {time}\n Log: " + NO_BOLD
 
     line = input(colored(welcome, COLOR))
     lines = [line]
