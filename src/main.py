@@ -20,7 +20,7 @@ if __name__ == "__main__":
     welcome = BOLD + f"Date: {date}\nTime: {time}\n Log: " + NO_BOLD
 
     line = input(colored(welcome, COLOR))
-    lines = [line]
+    lines = []
     while True:
         if line.endswith(":q"):
             sys.exit()
