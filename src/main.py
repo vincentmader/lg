@@ -14,7 +14,7 @@ NO_BOLD = "\033[0m"
 
 if __name__ == "__main__":
 
-    date = dt.now().strftime("%y-%m-%d")
+    date = dt.now().strftime("%Y-%m-%d")
     time = dt.now().strftime("%H:%M:%S")
     os.system('cls' if os.name == 'nt' else 'clear')
     welcome = BOLD + f"Date: {date}\nTime: {time}\n Log: " + NO_BOLD
